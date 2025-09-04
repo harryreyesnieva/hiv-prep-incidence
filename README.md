@@ -3,7 +3,8 @@ HIV Acquisition After PrEP Initiation: Quantifying Opportunities for Long-Acting
 <img src="https://img.shields.io/badge/Study%20Status-Started-blue.svg" alt="Study Status: Started"> 
 
 **Study Team**   
-Lauren R. Richter, MD, MA,<sup>1</sup> Harry Reyes Nieva, PhD, MAS,<sup>2</sup> Sarah DeLozier, MD,<sup>1</sup> Adeel Arif, MS,<sup>1</sup> Jason Zucker, MD, MS<sup>1,2</sup>   
+Lauren R. Richter, MD, MA,<sup>1</sup> Harry Reyes Nieva, PhD, MAS,<sup>2</sup> Sarah DeLozier, MD,<sup>1</sup> Adeel Arif, MS,<sup>1</sup>   
+Jason Zucker, MD, MS<sup>1,2</sup>   
 
 <sup>1</sup>Department of Biomedical Informatics, Columbia University, New York, NY    
 <sup>2</sup>Division of Infectious Diseases, Department of Medicine, Columbia University Irving Medical Center, New York, NY
