@@ -1,0 +1,517 @@
+{
+  "sharedResources": [
+    {
+      "cohortDefinitions": [
+        {
+          "cohortId": 1,
+          "cohortName": "PrEP",
+          "cohortDefinition": "{\n\t\"cdmVersionRange\" : \">=5.0.0\",\n\t\"PrimaryCriteria\" : {\n\t\t\"CriteriaList\" : [\n\t\t\t{\n\t\t\t\t\"DrugExposure\" : {\n\t\t\t\t\t\"CodesetId\" : 0,\n\t\t\t\t\t\"DrugTypeExclude\" : false,\n\t\t\t\t\t\"Age\" : {\n\t\t\t\t\t\t\"Value\" : 18,\n\t\t\t\t\t\t\"Op\" : \"bt\",\n\t\t\t\t\t\t\"Extent\" : 64\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t],\n\t\t\"ObservationWindow\" : {\n\t\t\t\"PriorDays\" : 0,\n\t\t\t\"PostDays\" : 30\n\t\t},\n\t\t\"PrimaryCriteriaLimit\" : {\n\t\t\t\"Type\" : \"First\"\n\t\t}\n\t},\n\t\"ConceptSets\" : [\n\t\t{\n\t\t\t\"id\" : 0,\n\t\t\t\"name\" : \"PrEP Ingredients [ljhas]\",\n\t\t\t\"expression\" : {\n\t\t\t\t\"items\" : [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 40124350,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"emtricitabine / tenofovir disoproxil Oral Tablet\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"540395\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Drug Form\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 35604224,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"emtricitabine / tenofovir alafenamide Oral Tablet\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"1747690\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Drug Form\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 702565,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"cabotegravir Injection\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"2588076\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Drug Form\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1301351,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"lenacapavir Injection\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"2625903\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Drug Form\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1302169,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"{2 (1.5 ML lenacapavir 309 MG/ML Injection [Sunlenca]) } Pack [Sunlenca 927 MG Kit]\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"2625912\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Branded Pack\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1302323,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"1.5 ML lenacapavir 309 MG/ML Injection [Sunlenca]\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"2625909\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Quant Branded Drug\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1301356,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"lenacapavir 309 MG/ML Injection [Sunlenca]\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"2625910\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Branded Drug\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1301355,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"lenacapavir Injection [Sunlenca]\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"2625908\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Branded Drug Form\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 740218,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"{1 (2 ML cabotegravir 200 MG/ML Injection) / 1 (2 ML rilpivirine 300 MG/ML Injection) } Pack [CABENUVA 400 MG / 600 MG]\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"2475418\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Branded Pack\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 740216,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"{1 (3 ML cabotegravir 200 MG/ML Injection) / 1 (3 ML rilpivirine 300 MG/ML Injection) } Pack [CABENUVA 600 MG / 900 MG]\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"2475416\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Branded Pack\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 739650,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"rilpivirine 300 MG/ML\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"2475411\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Drug Comp\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 779159,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"rilpivirine Injection\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"2594979\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Drug Form\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 36919581,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"3 ML rilpivirine 300 MG/ML Injection [Rekambys]\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"OMOP5209307\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm Extension\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Quant Branded Drug\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 740218,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"{1 (2 ML cabotegravir 200 MG/ML Injection) / 1 (2 ML rilpivirine 300 MG/ML Injection) } Pack [CABENUVA 400 MG / 600 MG]\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"2475418\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Branded Pack\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 36951170,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"3 ML cabotegravir 200 MG/ML Injection [Vocabria]\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"OMOP5209551\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm Extension\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Quant Branded Drug\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 740216,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"{1 (3 ML cabotegravir 200 MG/ML Injection) / 1 (3 ML rilpivirine 300 MG/ML Injection) } Pack [CABENUVA 600 MG / 900 MG]\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"2475416\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Branded Pack\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"id\" : 1,\n\t\t\t\"name\" : \"HIV infection Condition or Obs [ljhas]\",\n\t\t\t\"expression\" : {\n\t\t\t\t\"items\" : [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 439727,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"Human immunodeficiency virus infection\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"86406008\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Finding\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 4186235,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"Leukoplakia of tongue associated with HIV disease\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"414604009\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Finding\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 4226787,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"Abnormal weight loss associated with AIDS\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"421695000\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Observation\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Finding\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 4298853,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"Oral hairy leukoplakia associated with HIV disease\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"402901009\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Finding\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 42709912,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"Diffuse infiltrative lymphocytosis syndrome\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"449784008\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Finding\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 4013106,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"HIV positive\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"165816005\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Finding\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 4230566,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"Family history of human immunodeficiency virus infection\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"438998000\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Observation\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Context-dependent\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 4013105,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"HIV negative\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"165815009\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Finding\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 3200792,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"False positive serology for HIV\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"5990001000004101\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"Nebraska Lexicon\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Finding\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"id\" : 2,\n\t\t\t\"name\" : \"HIV meds NOT in PrEP [ljhas]\",\n\t\t\t\"expression\" : {\n\t\t\t\t\"items\" : [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 964008,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"bictegravir\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"1999660\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1704183,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"lamivudine\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"68244\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1710612,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"zidovudine\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"11413\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1712889,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"raltegravir\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"719872\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1727223,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"atazanavir\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"343047\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1736971,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"abacavir\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"190521\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1738135,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"efavirenz\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"195085\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1738170,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"lopinavir\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"195088\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1748921,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"ritonavir\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"85762\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1756831,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"darunavir\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"460132\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1769389,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"nevirapine\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"53654\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 1781406,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"stavudine\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"59763\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 35200446,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"doravirine\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"2055755\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 40238930,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"rilpivirine\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"1102270\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 42874212,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"elvitegravir\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"1306286\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 42874220,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"cobicistat\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"1306284\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 43560385,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"dolutegravir\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"1433868\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Drug\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"RxNorm\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Ingredient\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t}\n\t],\n\t\"QualifiedLimit\" : {\n\t\t\"Type\" : \"First\"\n\t},\n\t\"ExpressionLimit\" : {\n\t\t\"Type\" : \"First\"\n\t},\n\t\"InclusionRules\" : [\n\t\t{\n\t\t\t\"name\" : \"No concurrent treatment or PEP drug exposure\",\n\t\t\t\"description\" : \"Drug exposure is not part of PEP or tx regimen. PEP treatment is 28 days. Use 30 days for drug criteria due to prescribing habits.\",\n\t\t\t\"expression\" : {\n\t\t\t\t\"Type\" : \"ALL\",\n\t\t\t\t\"CriteriaList\" : [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"Criteria\" : {\n\t\t\t\t\t\t\t\"DrugExposure\" : {\n\t\t\t\t\t\t\t\t\"CodesetId\" : 2,\n\t\t\t\t\t\t\t\t\"DrugTypeExclude\" : false\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"StartWindow\" : {\n\t\t\t\t\t\t\t\"Start\" : {\n\t\t\t\t\t\t\t\t\"Days\" : 0,\n\t\t\t\t\t\t\t\t\"Coeff\" : -1\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"End\" : {\n\t\t\t\t\t\t\t\t\"Days\" : 30,\n\t\t\t\t\t\t\t\t\"Coeff\" : 1\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"UseIndexEnd\" : false,\n\t\t\t\t\t\t\t\"UseEventEnd\" : false\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"RestrictVisit\" : true,\n\t\t\t\t\t\t\"IgnoreObservationPeriod\" : false,\n\t\t\t\t\t\t\"Occurrence\" : {\n\t\t\t\t\t\t\t\"Type\" : 0,\n\t\t\t\t\t\t\t\"Count\" : 0,\n\t\t\t\t\t\t\t\"IsDistinct\" : false\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"DemographicCriteriaList\" : [],\n\t\t\t\t\"Groups\" : []\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"name\" : \"No previous HIV codes\",\n\t\t\t\"description\" : \"No HIV codes in the person's history or within 28 days of starting meds\",\n\t\t\t\"expression\" : {\n\t\t\t\t\"Type\" : \"ALL\",\n\t\t\t\t\"CriteriaList\" : [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"Criteria\" : {\n\t\t\t\t\t\t\t\"ConditionOccurrence\" : {\n\t\t\t\t\t\t\t\t\"CodesetId\" : 1\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"StartWindow\" : {\n\t\t\t\t\t\t\t\"Start\" : {\n\t\t\t\t\t\t\t\t\"Coeff\" : -1\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"End\" : {\n\t\t\t\t\t\t\t\t\"Days\" : 28,\n\t\t\t\t\t\t\t\t\"Coeff\" : 1\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"UseIndexEnd\" : false,\n\t\t\t\t\t\t\t\"UseEventEnd\" : false\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"RestrictVisit\" : false,\n\t\t\t\t\t\t\"IgnoreObservationPeriod\" : false,\n\t\t\t\t\t\t\"Occurrence\" : {\n\t\t\t\t\t\t\t\"Type\" : 0,\n\t\t\t\t\t\t\t\"Count\" : 0,\n\t\t\t\t\t\t\t\"IsDistinct\" : false\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"DemographicCriteriaList\" : [],\n\t\t\t\t\"Groups\" : []\n\t\t\t}\n\t\t},\n\t\t{\n\t\t\t\"name\" : \"No previous treatment for HIV\",\n\t\t\t\"description\" : \"PEP is 28 d. Use 30 days since prescriptions are either 28  or 30 d.\",\n\t\t\t\"expression\" : {\n\t\t\t\t\"Type\" : \"ALL\",\n\t\t\t\t\"CriteriaList\" : [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"Criteria\" : {\n\t\t\t\t\t\t\t\"DrugEra\" : {\n\t\t\t\t\t\t\t\t\"CodesetId\" : 2,\n\t\t\t\t\t\t\t\t\"EraLength\" : {\n\t\t\t\t\t\t\t\t\t\"Value\" : 30,\n\t\t\t\t\t\t\t\t\t\"Op\" : \"gt\"\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"StartWindow\" : {\n\t\t\t\t\t\t\t\"Start\" : {\n\t\t\t\t\t\t\t\t\"Coeff\" : -1\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"End\" : {\n\t\t\t\t\t\t\t\t\"Days\" : 1,\n\t\t\t\t\t\t\t\t\"Coeff\" : -1\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"UseIndexEnd\" : false,\n\t\t\t\t\t\t\t\"UseEventEnd\" : false\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"RestrictVisit\" : false,\n\t\t\t\t\t\t\"IgnoreObservationPeriod\" : false,\n\t\t\t\t\t\t\"Occurrence\" : {\n\t\t\t\t\t\t\t\"Type\" : 0,\n\t\t\t\t\t\t\t\"Count\" : 0,\n\t\t\t\t\t\t\t\"IsDistinct\" : false\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"DemographicCriteriaList\" : [],\n\t\t\t\t\"Groups\" : []\n\t\t\t}\n\t\t}\n\t],\n\t\"CensoringCriteria\" : [],\n\t\"CollapseSettings\" : {\n\t\t\"CollapseType\" : \"ERA\",\n\t\t\"EraPad\" : 0\n\t},\n\t\"CensorWindow\" : {}\n}"
+        },
+        {
+          "cohortId": 2,
+          "cohortName": "HIV infection",
+          "cohortDefinition": "{\n\t\"cdmVersionRange\" : \">=5.0.0\",\n\t\"PrimaryCriteria\" : {\n\t\t\"CriteriaList\" : [\n\t\t\t{\n\t\t\t\t\"ConditionOccurrence\" : {\n\t\t\t\t\t\"CodesetId\" : 0\n\t\t\t\t}\n\t\t\t}\n\t\t],\n\t\t\"ObservationWindow\" : {\n\t\t\t\"PriorDays\" : 0,\n\t\t\t\"PostDays\" : 1\n\t\t},\n\t\t\"PrimaryCriteriaLimit\" : {\n\t\t\t\"Type\" : \"First\"\n\t\t}\n\t},\n\t\"ConceptSets\" : [\n\t\t{\n\t\t\t\"id\" : 0,\n\t\t\t\"name\" : \"HIV Infection [ljhas]\",\n\t\t\t\"expression\" : {\n\t\t\t\t\"items\" : [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 439727,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"Human immunodeficiency virus infection\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"86406008\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Disorder\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 4013106,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"HIV detected\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"165816005\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Finding\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 4298853,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"Oral hairy leukoplakia associated with HIV disease\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"402901009\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Disorder\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 4186235,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"Leukoplakia of tongue associated with HIV disease\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"414604009\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Disorder\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 44783623,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"Pulmonary arterial hypertension associated with HIV infection\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"697904001\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Disorder\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 4188151,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"Hairy leukoplakia of tongue associated with HIV disease\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"414376003\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Disorder\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 4013105,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"HIV not detected\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"165815009\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Finding\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 3200792,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"False positive serology for HIV\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"5990001000004101\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Condition\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"Nebraska Lexicon\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Finding\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : true,\n\t\t\t\t\t\t\"includeDescendants\" : false,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t\t\"concept\" : {\n\t\t\t\t\t\t\t\"CONCEPT_ID\" : 4226787,\n\t\t\t\t\t\t\t\"CONCEPT_NAME\" : \"Abnormal weight loss associated with AIDS\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT\" : \"S\",\n\t\t\t\t\t\t\t\"STANDARD_CONCEPT_CAPTION\" : \"Standard\",\n\t\t\t\t\t\t\t\"INVALID_REASON\" : \"V\",\n\t\t\t\t\t\t\t\"INVALID_REASON_CAPTION\" : \"Valid\",\n\t\t\t\t\t\t\t\"CONCEPT_CODE\" : \"421695000\",\n\t\t\t\t\t\t\t\"DOMAIN_ID\" : \"Observation\",\n\t\t\t\t\t\t\t\"VOCABULARY_ID\" : \"SNOMED\",\n\t\t\t\t\t\t\t\"CONCEPT_CLASS_ID\" : \"Clinical Finding\"\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"isExcluded\" : false,\n\t\t\t\t\t\t\"includeDescendants\" : true,\n\t\t\t\t\t\t\"includeMapped\" : false\n\t\t\t\t\t}\n\t\t\t\t]\n\t\t\t}\n\t\t}\n\t],\n\t\"QualifiedLimit\" : {\n\t\t\"Type\" : \"First\"\n\t},\n\t\"ExpressionLimit\" : {\n\t\t\"Type\" : \"First\"\n\t},\n\t\"InclusionRules\" : [\n\t\t{\n\t\t\t\"name\" : \"Second code\",\n\t\t\t\"expression\" : {\n\t\t\t\t\"Type\" : \"ANY\",\n\t\t\t\t\"CriteriaList\" : [\n\t\t\t\t\t{\n\t\t\t\t\t\t\"Criteria\" : {\n\t\t\t\t\t\t\t\"ConditionOccurrence\" : {\n\t\t\t\t\t\t\t\t\"CodesetId\" : 0\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"StartWindow\" : {\n\t\t\t\t\t\t\t\"Start\" : {\n\t\t\t\t\t\t\t\t\"Days\" : 1,\n\t\t\t\t\t\t\t\t\"Coeff\" : 1\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"End\" : {\n\t\t\t\t\t\t\t\t\"Coeff\" : 1\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t\"UseIndexEnd\" : false,\n\t\t\t\t\t\t\t\"UseEventEnd\" : false\n\t\t\t\t\t\t},\n\t\t\t\t\t\t\"RestrictVisit\" : false,\n\t\t\t\t\t\t\"IgnoreObservationPeriod\" : false,\n\t\t\t\t\t\t\"Occurrence\" : {\n\t\t\t\t\t\t\t\"Type\" : 2,\n\t\t\t\t\t\t\t\"Count\" : 1,\n\t\t\t\t\t\t\t\"IsDistinct\" : false\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t],\n\t\t\t\t\"DemographicCriteriaList\" : [],\n\t\t\t\t\"Groups\" : []\n\t\t\t}\n\t\t}\n\t],\n\t\"CensoringCriteria\" : [],\n\t\"CollapseSettings\" : {\n\t\t\"CollapseType\" : \"ERA\",\n\t\t\"EraPad\" : 0\n\t},\n\t\"CensorWindow\" : {}\n}"
+        }
+      ],
+      "attr_class": ["CohortDefinitionSharedResources", "SharedResources"]
+    },
+    {
+      "negativeControlOutcomes": {
+        "negativeControlOutcomeCohortSet": [
+          {
+            "cohortId": "101",
+            "cohortName": "Allergic rhinitis",
+            "outcomeConceptId": " 257007"
+          },
+          {
+            "cohortId": "102",
+            "cohortName": "Carpal tunnel syndrome",
+            "outcomeConceptId": " 380094"
+          },
+          {
+            "cohortId": "103",
+            "cohortName": "Cerebral palsy",
+            "outcomeConceptId": "4134120"
+          },
+          {
+            "cohortId": "104",
+            "cohortName": "Chronic obstructive lung disease",
+            "outcomeConceptId": " 255573"
+          },
+          {
+            "cohortId": "105",
+            "cohortName": "Contact dermatitis",
+            "outcomeConceptId": " 134438"
+          },
+          {
+            "cohortId": "106",
+            "cohortName": "Cyst of ovary",
+            "outcomeConceptId": " 197610"
+          },
+          {
+            "cohortId": "107",
+            "cohortName": "Deviated nasal septum",
+            "outcomeConceptId": " 377910"
+          },
+          {
+            "cohortId": "108",
+            "cohortName": "Dislocation of shoulder joint",
+            "outcomeConceptId": "4213373"
+          },
+          {
+            "cohortId": "109",
+            "cohortName": "Endometriosis (clinical)",
+            "outcomeConceptId": " 433527"
+          },
+          {
+            "cohortId": "110",
+            "cohortName": "Foreign body in ear",
+            "outcomeConceptId": " 374801"
+          },
+          {
+            "cohortId": "111",
+            "cohortName": "Gout",
+            "outcomeConceptId": " 440674"
+          },
+          {
+            "cohortId": "112",
+            "cohortName": "Hemorrhoids",
+            "outcomeConceptId": " 195562"
+          },
+          {
+            "cohortId": "113",
+            "cohortName": "Hypoparathyroidism",
+            "outcomeConceptId": " 140362"
+          },
+          {
+            "cohortId": "114",
+            "cohortName": "Influenza",
+            "outcomeConceptId": "4266367"
+          },
+          {
+            "cohortId": "115",
+            "cohortName": "Ingrowing nail",
+            "outcomeConceptId": " 139099"
+          },
+          {
+            "cohortId": "116",
+            "cohortName": "Osteoarthritis of knee",
+            "outcomeConceptId": "4079750"
+          },
+          {
+            "cohortId": "117",
+            "cohortName": "Prostatitis",
+            "outcomeConceptId": " 194997"
+          },
+          {
+            "cohortId": "118",
+            "cohortName": "Sciatica",
+            "outcomeConceptId": " 372409"
+          },
+          {
+            "cohortId": "119",
+            "cohortName": "Sleep apnea",
+            "outcomeConceptId": " 313459"
+          },
+          {
+            "cohortId": "120",
+            "cohortName": "Vitamin D deficiency",
+            "outcomeConceptId": " 436070"
+          }
+        ],
+        "occurrenceType": "first",
+        "detectOnDescendants": true
+      },
+      "attr_class": ["NegativeControlOutcomeSharedResources", "SharedResources"]
+    }
+  ],
+  "moduleSpecifications": [
+    {
+      "module": "CohortGeneratorModule",
+      "settings": {
+        "generateStats": true
+      },
+      "attr_class": ["ModuleSpecifications", "CohortGeneratorModuleSpecifications"]
+    },
+    {
+      "module": "CohortDiagnosticsModule",
+      "settings": {
+        "cohortIds": [1, 2],
+        "runInclusionStatistics": true,
+        "runIncludedSourceConcepts": true,
+        "runOrphanConcepts": true,
+        "runTimeSeries": false,
+        "runVisitContext": true,
+        "runBreakdownIndexEvents": true,
+        "runIncidenceRate": true,
+        "runCohortRelationship": true,
+        "runTemporalCohortCharacterization": true,
+        "temporalCovariateSettings": {
+          "temporal": true,
+          "temporalSequence": false,
+          "DemographicsGender": true,
+          "DemographicsAge": true,
+          "DemographicsAgeGroup": true,
+          "DemographicsRace": true,
+          "DemographicsEthnicity": true,
+          "DemographicsIndexYear": true,
+          "DemographicsIndexMonth": true,
+          "DemographicsPriorObservationTime": true,
+          "DemographicsPostObservationTime": true,
+          "DemographicsTimeInCohort": true,
+          "DemographicsIndexYearMonth": true,
+          "ConditionOccurrence": true,
+          "ConditionEraStart": true,
+          "ConditionEraOverlap": true,
+          "ConditionEraGroupOverlap": true,
+          "DrugEraStart": true,
+          "DrugEraGroupOverlap": true,
+          "ProcedureOccurrence": true,
+          "DeviceExposure": true,
+          "Measurement": true,
+          "MeasurementRangeGroup": true,
+          "MeasurementValueAsConcept": true,
+          "Observation": true,
+          "ObservationValueAsConcept": true,
+          "CharlsonIndex": true,
+          "Dcsi": true,
+          "Chads2": true,
+          "Chads2Vasc": true,
+          "temporalStartDays": [-9999, -365, -180, -30, -365, -30, 0, 1, 31, -9999],
+          "temporalEndDays": [0, 0, 0, 0, -31, -1, 0, 30, 365, 9999],
+          "includedCovariateConceptIds": [],
+          "addDescendantsToInclude": false,
+          "excludedCovariateConceptIds": [],
+          "addDescendantsToExclude": false,
+          "includedCovariateIds": [],
+          "attr_class": "covariateSettings",
+          "attr_fun": "getDbDefaultCovariateData"
+        },
+        "minCharacterizationMean": 0.01,
+        "irWashoutPeriod": 0
+      },
+      "attr_class": ["ModuleSpecifications", "CohortDiagnosticsModuleSpecifications"]
+    },
+    {
+      "module": "CharacterizationModule",
+      "settings": {
+        "analysis": {
+          "timeToEventSettings": [
+            {
+              "targetIds": [1, 2],
+              "outcomeIds": 2,
+              "attr_class": "timeToEventSettings"
+            }
+          ],
+          "dechallengeRechallengeSettings": [
+            {
+              "targetCohortDefinitionIds": [1, 2],
+              "outcomeCohortDefinitionIds": 2,
+              "dechallengeStopInterval": 30,
+              "dechallengeEvaluationWindow": 30,
+              "attr_class": "dechallengeRechallengeSettings"
+            }
+          ],
+          "aggregateCovariateSettings": [
+            {
+              "targetIds": [1, 2],
+              "minPriorObservation": 0,
+              "outcomeIds": 2,
+              "outcomeWashoutDays": 365,
+              "riskWindowStart": 21,
+              "startAnchor": "cohort start",
+              "riskWindowEnd": 60,
+              "endAnchor": "cohort start",
+              "covariateSettings": [
+                {
+                  "temporal": false,
+                  "temporalSequence": false,
+                  "DemographicsGender": true,
+                  "DemographicsAge": true,
+                  "DemographicsAgeGroup": true,
+                  "DemographicsRace": true,
+                  "DemographicsEthnicity": true,
+                  "DemographicsIndexYear": true,
+                  "DemographicsIndexMonth": true,
+                  "DemographicsPriorObservationTime": true,
+                  "DemographicsPostObservationTime": true,
+                  "DemographicsTimeInCohort": true,
+                  "ConditionGroupEraLongTerm": true,
+                  "ConditionGroupEraShortTerm": true,
+                  "DrugGroupEraLongTerm": true,
+                  "DrugGroupEraShortTerm": true,
+                  "DrugGroupEraOverlapping": true,
+                  "ProcedureOccurrenceLongTerm": true,
+                  "ProcedureOccurrenceShortTerm": true,
+                  "DeviceExposureLongTerm": true,
+                  "DeviceExposureShortTerm": true,
+                  "MeasurementLongTerm": true,
+                  "MeasurementShortTerm": true,
+                  "ObservationLongTerm": true,
+                  "ObservationShortTerm": true,
+                  "VisitConceptCountLongTerm": true,
+                  "VisitConceptCountShortTerm": true,
+                  "longTermStartDays": -365,
+                  "mediumTermStartDays": -180,
+                  "shortTermStartDays": -30,
+                  "endDays": 0,
+                  "includedCovariateConceptIds": [],
+                  "addDescendantsToInclude": false,
+                  "excludedCovariateConceptIds": [],
+                  "addDescendantsToExclude": false,
+                  "includedCovariateIds": [],
+                  "attr_class": "covariateSettings",
+                  "attr_fun": "getDbDefaultCovariateData"
+                }
+              ],
+              "caseCovariateSettings": {
+                "temporal": false,
+                "temporalSequence": false,
+                "ConditionGroupEraDuring": true,
+                "DrugGroupEraDuring": true,
+                "ProcedureOccurrenceDuring": true,
+                "DeviceExposureDuring": true,
+                "MeasurementDuring": true,
+                "ObservationDuring": true,
+                "VisitConceptCountDuring": true,
+                "includedCovariateConceptIds": [],
+                "addDescendantsToInclude": false,
+                "excludedCovariateConceptIds": [],
+                "addDescendantsToExclude": false,
+                "includedCovariateIds": [],
+                "attr_class": "covariateSettings",
+                "attr_fun": "Characterization::getDbDuringCovariateData"
+              },
+              "casePreTargetDuration": 365,
+              "casePostOutcomeDuration": 365,
+              "extractNonCaseCovariates": true,
+              "attr_class": "aggregateCovariateSettings"
+            },
+            {
+              "targetIds": [1, 2],
+              "minPriorObservation": 0,
+              "outcomeIds": 2,
+              "outcomeWashoutDays": 365,
+              "riskWindowStart": 21,
+              "startAnchor": "cohort start",
+              "riskWindowEnd": 180,
+              "endAnchor": "cohort start",
+              "covariateSettings": [
+                {
+                  "temporal": false,
+                  "temporalSequence": false,
+                  "DemographicsGender": true,
+                  "DemographicsAge": true,
+                  "DemographicsAgeGroup": true,
+                  "DemographicsRace": true,
+                  "DemographicsEthnicity": true,
+                  "DemographicsIndexYear": true,
+                  "DemographicsIndexMonth": true,
+                  "DemographicsPriorObservationTime": true,
+                  "DemographicsPostObservationTime": true,
+                  "DemographicsTimeInCohort": true,
+                  "ConditionGroupEraLongTerm": true,
+                  "ConditionGroupEraShortTerm": true,
+                  "DrugGroupEraLongTerm": true,
+                  "DrugGroupEraShortTerm": true,
+                  "DrugGroupEraOverlapping": true,
+                  "ProcedureOccurrenceLongTerm": true,
+                  "ProcedureOccurrenceShortTerm": true,
+                  "DeviceExposureLongTerm": true,
+                  "DeviceExposureShortTerm": true,
+                  "MeasurementLongTerm": true,
+                  "MeasurementShortTerm": true,
+                  "ObservationLongTerm": true,
+                  "ObservationShortTerm": true,
+                  "VisitConceptCountLongTerm": true,
+                  "VisitConceptCountShortTerm": true,
+                  "longTermStartDays": -365,
+                  "mediumTermStartDays": -180,
+                  "shortTermStartDays": -30,
+                  "endDays": 0,
+                  "includedCovariateConceptIds": [],
+                  "addDescendantsToInclude": false,
+                  "excludedCovariateConceptIds": [],
+                  "addDescendantsToExclude": false,
+                  "includedCovariateIds": [],
+                  "attr_class": "covariateSettings",
+                  "attr_fun": "getDbDefaultCovariateData"
+                }
+              ],
+              "caseCovariateSettings": {
+                "temporal": false,
+                "temporalSequence": false,
+                "ConditionGroupEraDuring": true,
+                "DrugGroupEraDuring": true,
+                "ProcedureOccurrenceDuring": true,
+                "DeviceExposureDuring": true,
+                "MeasurementDuring": true,
+                "ObservationDuring": true,
+                "VisitConceptCountDuring": true,
+                "includedCovariateConceptIds": [],
+                "addDescendantsToInclude": false,
+                "excludedCovariateConceptIds": [],
+                "addDescendantsToExclude": false,
+                "includedCovariateIds": [],
+                "attr_class": "covariateSettings",
+                "attr_fun": "Characterization::getDbDuringCovariateData"
+              },
+              "casePreTargetDuration": 365,
+              "casePostOutcomeDuration": 365,
+              "extractNonCaseCovariates": true,
+              "attr_class": "aggregateCovariateSettings"
+            },
+            {
+              "targetIds": [1, 2],
+              "minPriorObservation": 0,
+              "outcomeIds": 2,
+              "outcomeWashoutDays": 365,
+              "riskWindowStart": 21,
+              "startAnchor": "cohort start",
+              "riskWindowEnd": 365,
+              "endAnchor": "cohort start",
+              "covariateSettings": [
+                {
+                  "temporal": false,
+                  "temporalSequence": false,
+                  "DemographicsGender": true,
+                  "DemographicsAge": true,
+                  "DemographicsAgeGroup": true,
+                  "DemographicsRace": true,
+                  "DemographicsEthnicity": true,
+                  "DemographicsIndexYear": true,
+                  "DemographicsIndexMonth": true,
+                  "DemographicsPriorObservationTime": true,
+                  "DemographicsPostObservationTime": true,
+                  "DemographicsTimeInCohort": true,
+                  "ConditionGroupEraLongTerm": true,
+                  "ConditionGroupEraShortTerm": true,
+                  "DrugGroupEraLongTerm": true,
+                  "DrugGroupEraShortTerm": true,
+                  "DrugGroupEraOverlapping": true,
+                  "ProcedureOccurrenceLongTerm": true,
+                  "ProcedureOccurrenceShortTerm": true,
+                  "DeviceExposureLongTerm": true,
+                  "DeviceExposureShortTerm": true,
+                  "MeasurementLongTerm": true,
+                  "MeasurementShortTerm": true,
+                  "ObservationLongTerm": true,
+                  "ObservationShortTerm": true,
+                  "VisitConceptCountLongTerm": true,
+                  "VisitConceptCountShortTerm": true,
+                  "longTermStartDays": -365,
+                  "mediumTermStartDays": -180,
+                  "shortTermStartDays": -30,
+                  "endDays": 0,
+                  "includedCovariateConceptIds": [],
+                  "addDescendantsToInclude": false,
+                  "excludedCovariateConceptIds": [],
+                  "addDescendantsToExclude": false,
+                  "includedCovariateIds": [],
+                  "attr_class": "covariateSettings",
+                  "attr_fun": "getDbDefaultCovariateData"
+                }
+              ],
+              "caseCovariateSettings": {
+                "temporal": false,
+                "temporalSequence": false,
+                "ConditionGroupEraDuring": true,
+                "DrugGroupEraDuring": true,
+                "ProcedureOccurrenceDuring": true,
+                "DeviceExposureDuring": true,
+                "MeasurementDuring": true,
+                "ObservationDuring": true,
+                "VisitConceptCountDuring": true,
+                "includedCovariateConceptIds": [],
+                "addDescendantsToInclude": false,
+                "excludedCovariateConceptIds": [],
+                "addDescendantsToExclude": false,
+                "includedCovariateIds": [],
+                "attr_class": "covariateSettings",
+                "attr_fun": "Characterization::getDbDuringCovariateData"
+              },
+              "casePreTargetDuration": 365,
+              "casePostOutcomeDuration": 365,
+              "extractNonCaseCovariates": true,
+              "attr_class": "aggregateCovariateSettings"
+            }
+          ],
+          "attr_class": "characterizationSettings"
+        },
+        "minCharacterizationMean": 0.01
+      },
+      "attr_class": ["ModuleSpecifications", "CharacterizationModuleSpecifications"]
+    },
+    {
+      "module": "CohortIncidenceModule",
+      "settings": {
+        "irDesign": {
+          "targetDefs": [
+            {
+              "id": 1,
+              "name": "PrEP"
+            }
+          ],
+          "outcomeDefs": [
+            {
+              "id": 1,
+              "name": "HIV infection",
+              "cohortId": 2,
+              "cleanWindow": 9999
+            }
+          ],
+          "timeAtRiskDefs": [
+            {
+              "id": 1,
+              "start": {
+                "dateField": "start",
+                "offset": 21
+              },
+              "end": {
+                "dateField": "start",
+                "offset": 60
+              }
+            },
+            {
+              "id": 2,
+              "start": {
+                "dateField": "start",
+                "offset": 21
+              },
+              "end": {
+                "dateField": "start",
+                "offset": 180
+              }
+            },
+            {
+              "id": 3,
+              "start": {
+                "dateField": "start",
+                "offset": 21
+              },
+              "end": {
+                "dateField": "start",
+                "offset": 365
+              }
+            }
+          ],
+          "analysisList": [
+            {
+              "targets": 1,
+              "outcomes": 1,
+              "tars": [1, 2, 3]
+            }
+          ],
+          "strataSettings": {
+            "byAge": true,
+            "byGender": true,
+            "byYear": true,
+            "ageBreaks": [18, 28, 38, 48, 58]
+          }
+        }
+      },
+      "attr_class": ["ModuleSpecifications", "CohortIncidenceModuleSpecifications"]
+    }
+  ],
+  "attr_class": "AnalysisSpecifications"
+}
